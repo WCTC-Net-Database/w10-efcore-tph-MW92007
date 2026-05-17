@@ -48,4 +48,9 @@ public abstract class Character : ICharacter
             ability.Activate(this, characterTarget);
         }
     }
+
+    public virtual void ExecuteAbility(Ability ability)
+    {
+        Console.WriteLine($"{Name} uses {ability.Name}!");
+    }
 }
